@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Doraemon</title>
+    <link rel="shortcut icon" href="https://i.pinimg.com/originals/73/6b/f0/736bf0a8a894508825d4477ef527c72d.png">
+    <style>
+        body { 
+            margin: 0; 
+        } 
+        canvas {
+            display: block;
+        }
+        div {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        #info {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            text-align: left;
+            z-index: 100;
+            display:block;
+            color: black;
+            background-color: lightblue;
+            padding: 10px;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    </style>
+    <meta charset="UTF-8" />
+    <script type="text/javascript" charset="UTF-8" src="lib/three.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="lib/three.module.js"></script>
+    <script type="text/javascript" charset="UTF-8" src="lib/OrbitControls.js"></script>
+    <script type="text/javascript" src="./Dora.js"></script>
+</head>
+
+<body>
+
+    <div id="container"></div>
+    <div id="info">CONTROLES:<br>
+        +Walk: W (forward), S (backward)<br>
+        +Rotate: A (left), D (right)<br>
+        +Rotate head: Q (left), E (right)<br>
+        +Jump: space bar <br>
+        +Camera rotation: left click + mouse movement <br>
+        +Camera movement: right click + mouse movement<br>
+        +Camera zoom: mouse roulette <br>
+    </div>
+
+    <script type="text/javascript">
+        (function () {
+            init();
+            animate();
+        })();
+    </script>
+</body>
+</html>
